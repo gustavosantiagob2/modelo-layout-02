@@ -1,0 +1,49 @@
+body, html{
+    background-color: blue;
+}
+
+.container{
+    margin: 0 auto;
+    width: 80vw;
+    display: grid;
+    grid-template: 20vh 70vh 10vh/ 1fr 1fr 1fr;
+    grid-template-areas: "h h h" "a A s" "f f f";
+    row-gap: 2px;
+    column-gap: 2px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background: rgb(36, 248, 12);
+    grid-area: h;
+    padding: 10px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    background: rgb(251, 9, 9);
+    width: 50vw;
+    height: 20%;
+}
+
+aside{
+    background: rgb(8, 162, 239);
+    grid-area: a;
+}
+
+article{
+    background-color: aquamarine;
+    grid-area: A ;
+}
+
+section{
+    background-color: blueviolet;
+    grid-area: s;
+}
+
+footer{
+    background-color: coral;
+    grid-area: f;
+}

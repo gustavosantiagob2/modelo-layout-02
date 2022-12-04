@@ -1,0 +1,48 @@
+body, html{
+    background: rgb(6, 41, 241);
+    
+}
+.container{
+    margin: 0 auto;
+    width: 80vw; /* vw largura visivel*/
+    display: grid;
+    grid-template: 20vh 70vh 10vh/ 1fr 1fr 1fr ;
+    grid-template-areas: "h h h" "a m m" "f f f";
+    row-gap: 2px;
+    column-gap: 2px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    background: rgb(36, 248, 12);
+    grid-area: h;
+    padding: 10px;
+    font-weight: 200    ;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+}
+
+li{
+    display: inline-block;
+    margin-left: 20px;
+}
+li a{
+    text-decoration:none;
+    color: aliceblue;
+}
+
+main{
+    background: rgb(7, 0, 0);
+    grid-area: m;
+    color: aqua;
+}
+
+aside{
+    background: rgb(245, 5, 5);
+    grid-area: a;
+}
+
+footer{
+    background: rgb(220, 8, 153);
+    grid-area: f;
+}
